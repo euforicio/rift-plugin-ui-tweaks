@@ -4,10 +4,10 @@
   "repository": { "type": "git", "url": "https://github.com/euforicio/rift-plugin-ui-tweaks.git" },
   "version": "0.18.0",
   "description": "Small, configurable interface improvements for BB.",
-  "author": {
-    "name": "WYEZ",
-    "url": "https://github.com/wy3z"
-  },
+  "author": "Rift Labs",
+  "contributors": [
+    { "name": "WYEZ", "url": "https://github.com/wy3z" }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
