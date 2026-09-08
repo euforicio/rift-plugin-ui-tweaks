@@ -1,5 +1,7 @@
 {
-  "name": "bb-plugin-ui-tweaks",
+  "name": "rift-plugin-ui-tweaks",
+  "homepage": "https://riftlabs.app",
+  "repository": { "type": "git", "url": "https://github.com/euforicio/rift-plugin-ui-tweaks.git" },
   "version": "0.18.0",
   "description": "Small, configurable interface improvements for BB.",
   "author": {
@@ -32,10 +34,10 @@
     "typecheck": "tsc -p tsconfig.json"
   },
   "engines": {
-    "bb": ">=0.39 <0.42",
-    "bbPluginSdk": ">=0.4.8 <0.5"
+    "rift": ">=0.39 <0.42",
+    "riftPluginSdk": ">=0.4.48"
   },
-  "bb": {
+  "rift": {
     "name": "UI Tweaks",
     "description": "Small, configurable improvements to BB's interface.",
     "branding": {
@@ -45,7 +47,7 @@
     "app": "./app.tsx"
   },
   "devDependencies": {
-    "@get-bb/plugin-sdk": "0.4.34",
+    "@riftlabs/plugin-sdk": "0.4.48",
     "@pierre/diffs": "^1.2.9",
     "@radix-ui/react-alert-dialog": "^1.1.19",
     "@radix-ui/react-context-menu": "^2.3.3",

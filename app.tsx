@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { definePluginApp } from "@get-bb/plugin-sdk/app";
+import { definePluginApp } from "@riftlabs/plugin-sdk/app";
 import { mergeRetainedItems } from "./lib/footer-actions.js";
 import {
   WORKSPACE_APP_CATEGORIES,
