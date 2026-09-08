@@ -1,19 +1,20 @@
 {
   "name": "rift-plugin-ui-tweaks",
   "homepage": "https://riftlabs.app",
-  "repository": { "type": "git", "url": "https://github.com/euforicio/rift-plugin-ui-tweaks.git" },
-  "version": "0.18.0",
-  "description": "Small, configurable interface improvements for BB.",
-  "author": "Rift Labs",
-  "contributors": [
-    { "name": "WYEZ", "url": "https://github.com/wy3z" }
-  ],
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wy3z/bb-plugin-ui-tweaks.git"
+    "url": "https://github.com/euforicio/rift-plugin-ui-tweaks.git"
   },
-  "homepage": "https://github.com/wy3z/bb-plugin-ui-tweaks#readme",
+  "version": "0.18.0",
+  "description": "Small, configurable interface improvements for Rift.",
+  "author": "RiftLabs",
+  "contributors": [
+    {
+      "name": "WYEZ",
+      "url": "https://github.com/wy3z"
+    }
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wy3z/bb-plugin-ui-tweaks/issues"
   },
@@ -28,18 +29,18 @@
     "server.ts"
   ],
   "scripts": {
-    "build": "bb plugin build",
+    "build": "node tooling/build-plugin.mjs",
     "check": "npm run test && npm run typecheck && npm run build",
     "test": "node --experimental-strip-types --test test/*.test.ts",
     "typecheck": "tsc -p tsconfig.json"
   },
   "engines": {
-    "rift": ">=0.39 <0.42",
+    "rift": ">=0.39 <0.43",
     "riftPluginSdk": ">=0.4.48"
   },
   "rift": {
     "name": "UI Tweaks",
-    "description": "Small, configurable improvements to BB's interface.",
+    "description": "Small, configurable improvements to Rift's interface.",
     "branding": {
       "icon": "SlidersHorizontal"
     },
@@ -47,7 +48,6 @@
     "app": "./app.tsx"
   },
   "devDependencies": {
-    "@riftlabs/plugin-sdk": "0.4.48",
     "@pierre/diffs": "^1.2.9",
     "@radix-ui/react-alert-dialog": "^1.1.19",
     "@radix-ui/react-context-menu": "^2.3.3",
@@ -59,16 +59,21 @@
     "@radix-ui/react-popover": "^1.1.19",
     "@radix-ui/react-select": "^2.3.3",
     "@radix-ui/react-tooltip": "^1.2.12",
+    "@riftlabs/plugin-sdk": "0.4.48",
+    "@tailwindcss/node": "4.2.1",
     "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "bb-app": "0.41.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "esbuild": "0.28.0",
+    "hono": "^4.13.7",
     "sonner": "^1.7.4",
     "tailwind-merge": "^3.4.0",
+    "tailwindcss": "4.2.1",
     "typescript": "^5.7.0",
-    "vaul": "^1.1.2"
+    "vaul": "^1.1.2",
+    "zod": "^4.5.4"
   }
 }
